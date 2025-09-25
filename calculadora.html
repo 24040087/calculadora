@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js</title>
+    <title>Calculadora con Cuadrado</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,6 +22,7 @@
                 <button type="button" class="operacion-aritmetica" onclick="calcular('multiplicacion')">Multiplicar (*)</button>
                 <button type="button" class="operacion-aritmetica" onclick="calcular('division')">Dividir (/)</button>
                 <button type="button" class="operacion-cuadrado" onclick="calcularCuadrado()">Cuadrado (x²)</button>
+                <button type="button" class="operacion-limpiar" onclick="limpiarCampos()">Limpiar</button>
             </div>
         </form>
     </div>
@@ -32,6 +33,12 @@
         function showNum2() {
             document.getElementById('num2').style.display = 'block';
             document.getElementById('resultado').value = '';
+        }
+
+        function limpiarCampos() {
+            document.getElementById('num1').value = "";
+            document.getElementById('num2').value = "";
+            document.getElementById('resultado').value = "";
         }
 
         function calcularCuadrado() {
