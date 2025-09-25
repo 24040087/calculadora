@@ -1,0 +1,58 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        }
+        .container {
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        input, button {
+            margin: 8px 0;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            width: 90%;
+            box-sizing: border-box;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        input::placeholder {
+            color: #999;
+        }
+        button {
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .operacion-aritmetica {
+            background: linear-gradient(45deg, #007BFF, #0056b3);
+        }
+        .operacion-cuadrado {
+            background: linear-gradient(45deg, #28a745, #1d7b34);
+        }
+        .operacion-aritmetica:hover, .operacion-cuadrado:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+        .button-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button-group button {
+            width: 100%;
+        }
